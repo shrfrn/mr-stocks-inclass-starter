@@ -13,6 +13,8 @@
 		<input 
             name="symbol" 
             list="symbols" placeholder="Pick a stock" />
+        
+        <button onclick="onGetQuotes()">Get Quotes</button>
 
 		<datalist id="symbols">
 			<option value="AMZN" label="Amazon"></option>
@@ -27,5 +29,8 @@
 		<script src="lib/chart.umd.js"></script>
 
 		<script src="js/services/util.service.js"></script>
+		<script src="js/services/stock.service.js"></script>
+
+		<script src="js/stock.controller.js"></script>
 	</body>
 </html>
