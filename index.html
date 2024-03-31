@@ -7,11 +7,10 @@
 		<link rel="stylesheet" href="css/stocks.css" />
 		<title>stocks</title>
 	</head>
-	<body>
+	<body onload="onInit()">
 
 		<h1>Mr. Stocks</h1>
 		<input 
-            onchange="onGetQuotes(event)"
             name="symbol" type="search"
             list="symbols" placeholder="Pick a stock" />
         

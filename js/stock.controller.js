@@ -2,6 +2,11 @@
 
 var gChart = null 
 
+function onInit() {
+    const elInput = document.querySelector('input')
+    elInput.addEventListener('input', debounce(onGetQuotes, 500))
+}
+
 function onGetQuotes(ev) {
     
     adjustDisplay('loading')    
