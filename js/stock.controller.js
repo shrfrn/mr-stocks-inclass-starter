@@ -1,7 +1,8 @@
 'use strict'
 
-function onGetQuotes() {
-    getQuotes(renderQuotes)
+function onGetQuotes(ev) {
+    const symbol = ev.target.value
+    getQuotes(renderQuotes, symbol)
 }
 
 function renderQuotes(data) {
