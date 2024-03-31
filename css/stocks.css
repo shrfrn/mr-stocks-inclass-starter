@@ -43,3 +43,9 @@ body {
     background-color: var(--clr-text);
     color: var(--clr-bg);
 }
+
+.chart {
+    width: min(800px, 80vw);
+    min-height: 280px;
+    margin: 30px auto;
+}
