@@ -49,3 +49,13 @@ body {
     min-height: 280px;
     margin: 30px auto;
 }
+
+.loader {
+    display: block;
+    max-width: 10%;
+    margin: 100px auto;
+}
+
+.hidden {
+    display: none;
+}

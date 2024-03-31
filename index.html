@@ -16,12 +16,15 @@
             list="symbols" placeholder="Pick a stock" />
         
 
-        <section class="stock-data">
+        <section class="stock-data hidden">
             <section class="chart">
                 <canvas></canvas>
             </section>
             <ul class="quote-list"></ul>
         </section>
+        <h2 class="hidden msg">No Results</h2>
+        <img src="img/loader.svg" alt="loader" class="loader hidden">
+
 		<datalist id="symbols">
 			<option value="AMZN" label="Amazon"></option>
 			<option value="TSLA" label="Tesla"></option>
