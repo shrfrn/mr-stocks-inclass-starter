@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/stocks.css" />
+		<title>stocks</title>
+	</head>
+	<body>
+
+		<h1>Mr. Stocks</h1>
+		<input 
+            name="symbol" 
+            list="symbols" placeholder="Pick a stock" />
+
+		<datalist id="symbols">
+			<option value="AMZN" label="Amazon"></option>
+			<option value="TSLA" label="Tesla"></option>
+			<option value="TEVA" label="Teva"></option>
+			<option value="AAPL" label="Apple"></option>
+			<option value="FVRR" label="Fiverr"></option>
+			<option value="FB" label="Facebook"></option>
+		</datalist>
+        
+		<script src="lib/jquery-3.7.1.js"></script>
+		<script src="lib/chart.umd.js"></script>
+
+		<script src="js/services/util.service.js"></script>
+	</body>
+</html>
