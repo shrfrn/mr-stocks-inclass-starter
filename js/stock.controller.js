@@ -6,4 +6,5 @@ function onGetQuotes() {
 
 function renderQuotes(data) {
     console.log(data)
+    // saveToStorage('quotes', data)
 }
