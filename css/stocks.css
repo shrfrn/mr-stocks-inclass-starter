@@ -2,10 +2,44 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #2e2e2e;
+:root {
+    --clr-bg: #2e2e2e;
+    --clr-text: #fafafa;
+}
 
-    color: #fafafa;
+body {
+    background-color: var(--clr-bg);
+
+    color: var(--clr-text);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+.quote-list {
+    display: flex;
+    flex-direction: column;
+
+    width: min(300px, 60vw);
+    max-height: 9lh;
+    overflow: scroll;
+    
+    padding: 0;
+    margin: 80px auto;
+
+    list-style: none;
+    line-height: 2;
+}
+
+.quote-list li {
+    display: flex;
+    justify-content: space-between;
+
+    height: 1lh;
+    padding-inline: 1em;
+    margin: 0;
+}
+
+.quote-list li:nth-child(odd) {
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
 }
