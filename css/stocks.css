@@ -2,10 +2,22 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #2e2e2e;
+:root {
+    --clr-dark: #2e2e2e;
+    --clr-light: #fafafa;
 
-    color: #fafafa;
+    --clr-bg: var(--clr-dark);
+    --clr-text: var(--clr-light);
+}
+
+body {
+    background-color: var(--clr-bg);
+
+    color: var(--clr-text);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
