@@ -19,15 +19,11 @@ function getRandomIntInclusive(min, max) {
 // be triggered. The function will be called after it stops being called for
 // `wait` milliseconds.
 
-function debounce(func, wait = 300) {
-	let timeout
+function debounce(func, delay) {
+	var timeoutId
 
-	return function executedFunction(...args) {
-		const later = () => {
-			clearTimeout(timeout)
-			func(...args)
-		}
-		clearTimeout(timeout)
-		timeout = setTimeout(later, wait)
+	return (...args) => {
+		clearTimeout(timeoutId)
+		timeoutId = setTimeout(() => func(...args), delay)
 	}
 }

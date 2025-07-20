@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/stocks.css" />
 		<title>stocks</title>
 	</head>
-	<body>
+	<body onload="onInit()">
 
 		<h1>Mr. Stocks</h1>
 		<input 
@@ -22,9 +22,11 @@
 			<option value="FVRR" label="Fiverr"></option>
 		</datalist>
         
-		<script src="lib/jquery-3.7.1.js"></script>
 		<script src="lib/chart.umd.js"></script>
 
 		<script src="js/services/util.service.js"></script>
+		<script src="js/services/ajax.service.js"></script>
+
+		<script src="js/mr-stocks.controller.js"></script>
 	</body>
 </html>
